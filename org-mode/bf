@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: bf
+# key: bf
+# --
+\begin{figure}
+$0
+\end{figure}

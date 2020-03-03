@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: bp
+# key: bp
+# --
+\begin{pmatrix}
+$0
+\end{pmatrix}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: bs
+# key: bs
+# --
+\begin{split}
+$0
+\end{split}

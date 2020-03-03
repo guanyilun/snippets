@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: bc
+# key: bc
+# --
+\begin{center}
+$0
+\end{center}
