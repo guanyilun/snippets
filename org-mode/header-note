@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# name: header-note
+# key: header:note
+# --
+#+LaTeX: %================== Begin of Header ========================
+#+LATEX_CLASS: revtex4-1
+#+LATEX_CLASS_OPTIONS: [onecolumn, amsmath, amssymb, aps, notitlepage]
+#+LATEX_HEADER: \usepackage{amsmath,amssymb,bm,color,float,graphicx}
+#+LATEX_HEADER: \usepackage{dcolumn}
+#+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \bibliographystyle{unsrtnat}
+#+OPTIONS: H:2 toc:nil num:t email:nil author:nil title:nil
+#+LaTeX: \title{$1}
+#+LaTeX: \author{Yilun Guan}
+#+LaTeX: \affiliation{Department of Physics and Astronomy, University of Pittsburgh, PA 15260, USA}
+#+LaTeX: \date{\today}
+\begin{abstract}
+\end{abstract}
+#+LaTeX: \maketitle
+#+LaTeX: \newcommand{\yg}[1]{\textcolor{red}{(#1)}}
+#+LaTeX: %================== End of Header =========================
+$0
+
+
+# references
+bibliography:references.bib

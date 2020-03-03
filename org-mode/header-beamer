@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: header-beamer
+# key: header:beamer
+# --
+#+TITLE: $1
+#+AUTHOR: Yilun Guan
+#+EMAIL:  yilun.guan@pitt.edu
+#+DATE:   \today
+#+DESCRIPTION:
+#+KEYWORDS:
+#+BEAMER_HEADER: \institute{University of Pittsburgh}
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [presentation, t]
+#+LATEX_HEADER: \bibliographystyle{unsrt}
+#+LATEX_HEADER: \usetheme{CambridgeUS}
+#+LATEX_HEADER: \usecolortheme{dove}
+#+COLUMNS: %45ITEM %10BEAMER_ENV(Env) %10BEAMER_ACT(Act) %4BEAMER_COL(Col) %8BEAMER_OPT(Opt)
+
+$0
