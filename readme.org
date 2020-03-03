@@ -1,0 +1,4 @@
+* Snippets
+
+The repo aims to collect my yasnippets so i can use on different places.
+It also means that this repo is very specific to my own settings. 
