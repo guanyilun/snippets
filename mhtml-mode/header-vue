@@ -14,7 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body style="margin: 0px;">
-    <div id="app" style="width: 1900px;height:950px;">
+    <div id="app" class="container">
+      <h3>$1</h3>
       $0
     </div>
     <script type="text/javascript">
