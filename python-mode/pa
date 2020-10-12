@@ -1,0 +1,4 @@
+# key: pa
+# name: pa
+# --
+parser.add_argument("-$1","--$0",type=int,default=0)
