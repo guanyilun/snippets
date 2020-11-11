@@ -11,7 +11,6 @@ parser.add_argument("-i","--idir",type=str,default=None)
 parser.add_argument("-o","--odir",type=str,default='out')
 args = parser.parse_args()
 
-if not op.exists(args.odir):
-    os.makedirs(args.odir)
+if not op.exists(args.odir): os.makedirs(args.odir)
 
 $0

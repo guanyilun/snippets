@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: mod
+# key: mod
+# --
+class Module:
+    def __init__(self, config):
+        pass
+
+    def run(self, p):
+        $0
