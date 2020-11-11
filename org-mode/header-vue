@@ -1,0 +1,46 @@
+# -*- mode: snippet -*-
+# name: header-vue
+# key: header:vue
+# --
+# -*- mode: org; -*-
+#+TITLE: $1
+#+AUTHOR: Yilun Guan
+#+EMAIL:  yilun.guan@pitt.edu
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:nil \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+#+HTML_HEAD: <link rel="stylesheet" href="https://gongzhitaao.org/orgcss/org.css">
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+#+HTML_HEAD: <script src="https://portal.nersc.gov/project/sobs/users/yguan/js/mousetrap.min.js"></script>
+#+HTML_HEAD: <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+
+* section 1
+$0
+* section 2
+
+#+begin_src inline-js
+  var vm = new Vue({
+    el: '#content',
+    data: {
+      f_i: 0,
+      freqs: ['f090','f150','f220'],
+    },
+    methods: {
+      next_f () {
+        if (this.f_i != this.freqs.length-1) this.f_i += 1
+      },
+      prev_f () {
+        if (this.f_i != 0) this.f_i -= 1
+      },
+    },
+    mounted() {
+      Mousetrap.bind('j', this.next_f);
+      Mousetrap.bind('k', this.prev_f);
+    }
+  })
+#+end_src

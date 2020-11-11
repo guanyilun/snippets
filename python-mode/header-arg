@@ -4,11 +4,10 @@
 # --
 import argparse, os, os.path as op
 import numpy as np
-from matplotlib import pyplot as plt
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-i","--idir",type=str,default=None)
-parser.add_argument("-o","--odir",type=str,default='out')
+parser.add_argument('-o', '--odir', default='out')
+parser.add_argument('-v', '--ver', action='store_true', default=False)
 args = parser.parse_args()
 
 if not op.exists(args.odir): os.makedirs(args.odir)
